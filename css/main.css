@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.main-navigation {
+    background-color: #000;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.navigation-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navigation-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 0.5rem;
+}
+
+.event-card {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.event-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover; 
+    border-radius: 7px;
+}
+
+.event-card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.event-card p {
+    margin: 0.3rem 0;
+}
+
+.socials-container {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.socials-container a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.socials-container a:hover {
+    text-decoration: underline;
+}
+
+.countdown-timer {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px;
+    color: white;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    overflow-y: auto;
+    transition: right 0.5s ease;
+    z-index: 1;
+}
+
+.modal.show {
+    right: 0;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 95%;
+    height: auto;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+#modal-image {
+    flex: 0 0 auto;
+    max-width: 40%;
+    margin-right: 20px;
+}
+
+#modal-image img {
+    width: 100%;
+    height: auto;
+}
+
+.modal-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#modal-stage {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.modal-text h3 {
+    font-size: 2rem;
+    margin: 5px 0 15px 0;
+}
+
+.socials-container {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.modal-text p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #555;
+    text-decoration: none;
+    cursor: pointer;
+}
